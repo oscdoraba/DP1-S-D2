@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+	
+	
+	<!-- Shout -->
+	
+	<bean id="shout01" class="acme.entities.shout.Shout">
+	
+	<property name="author" value="John Doe"/>
+	<property name="text" value="I´m happy"/>
+	<property name="moment" value="2019/09/09 10:00"/>
+	
+	</bean>
+	
+	<bean id="shout02" class="acme.entities.shout.Shout">
+	
+	<property name="author" value="Jane Doe"/>
+	<property name="text" value="I´m the master of my room!"/>
+	<property name="moment" value="2019/08/09 15:55"/>
+	
+	</bean>
+	
+	<bean id="shout03" class="acme.entities.shout.Shout">
+	
+	<property name="author" value="Foo Bar"/>
+	<property name="text" value="Just turning 20!"/>
+	<property name="moment" value="2019/09/07 00:00"/>
+	
+	</bean>
+	
+	<!-- DoradoBulletin -->
+	
+	<bean id="doradoBulletin1" class="acme.entities.doradoBulletin.DoradoBulletin">
+	
+	<property name="sender" value="Oscar"/>
+	<property name="receiver" value="Pablo"/>
+	<property name="web" value="https://www.gmail.com"/>
+	
+	</bean>
+	
+	<!-- CalleBulletin -->
+	
+	<bean id="calleBulletin01" class="acme.entities.calleBulletin.CalleBulletin">
+	
+	<property name="title" value="Uno contra 20 Mc´s"/>
+	<property name="artist" value="Toteking"/>
+	<property name="album" value="Música para Enfermos"/>
+	<property name="moment" value="2004/07/24 17:43"/>
+	
+	</bean>
+	
+	<bean id="calleBulletin02" class="acme.entities.calleBulletin.CalleBulletin">
+	
+	<property name="title" value="1000 guerras"/>
+	<property name="artist" value="Ayax y Prok"/>
+	<property name="album" value="Single"/>
+	<property name="moment" value="2020/07/16 15:00"/>
+	
+	</bean>
+	
+	<bean id="calleBulletin03" class="acme.entities.calleBulletin.CalleBulletin">
+	
+	<property name="title" value="Y la felicidad qué"/>
+	<property name="artist" value="Canserbero"/>
+	<property name="album" value="Vida"/>
+	<property name="moment" value="2010/07/08 12:34"/>
+	
+	</bean>
+	
+	<bean id="calleBulletin04" class="acme.entities.calleBulletin.CalleBulletin">
+	
+	<property name="title" value="Anochece/Manifiesto"/>
+	<property name="artist" value="Nach"/>
+	<property name="album" value="Un día en suburbia"/>
+	<property name="moment" value="2008/02/13 03:34"/>
+	
+	</bean>
+
+	
+
+</beans>
