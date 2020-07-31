@@ -29,6 +29,10 @@
 
     drop table if exists `consumer`;
 
+    drop table if exists `dorado_bulletin`;
+
+    drop table if exists `inquiries`;
+
     drop table if exists `provider`;
 
     drop table if exists `shout`;
