@@ -91,6 +91,24 @@
 	<property name="moment" value="2008/02/13 03:34"/>
 	
 	</bean>
+	
+	<!-- Inquiries -->
+	
+	<bean id="inquiries01" class="acme.entities.inquiries.Inquiries">
+	
+	<property name="title" value="¿La sangre manda en castellano?"/>
+	<property name="dateOfCreation" value="2020/05/01 11:32"/>
+	<property name="deadline" value="2022/04/07 12:34"/>
+	<property name="description" value="Hola, quería saber si ya se encuentra la versión traducida del nuevo libro de Stephen
+	King titulado If It Bleeds en su idioma original
+	
+	Atentamente, un usuario inquieto"/>
+	<property name="minMoney" value="€ 21.70"/>
+	<property name="maxMoney" value="€ 22.70"/>
+	<property name="email" value="impaciente@gmail.com"/>
+	</bean>
+	
+	
 
 	
 
