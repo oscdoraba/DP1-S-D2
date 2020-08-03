@@ -36,6 +36,7 @@ master.menu.anonymous.listDoradoBulletin = Listar Dorado Informes
 master.menu.anonymous.createDoradoBulletin = Crear Dorado Informe
 master.menu.anonymous.listCalleBulletin = Listar Calle Informes
 master.menu.anonymous.createCalleBulletin = Crear Calle Informe
+master.menu.anonymous.listTechnology-records = Listar Registros Tecnológicos
 
 
 # master.menu.administrator ###################################################

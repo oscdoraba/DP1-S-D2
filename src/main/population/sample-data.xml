@@ -108,6 +108,20 @@
 	<property name="email" value="impaciente@gmail.com"/>
 	</bean>
 	
+	<!-- Technology Records -->
+	
+	<bean id="technologyRecords01" class="acme.entities.technologyRecords.TechnologyRecords">
+	
+	<property name="title" value="Corriente alterna"/>
+	<property name="activitySector" value="Electricidad"/>
+	<property name="inventor" value="Nikola Tesla"/>
+	<property name="description" value="Combatió a la corriente continua de Thomas Alva Edison con éxito, funcionando en la actualidad."/>
+	<property name="website" value="https://solar-energia.net/electricidad/corriente-electrica/corriente-alterna"/>
+	<property name="email" value="ntvstae@gmail.com"/>
+	<property name="indication" value="OPEN_SOURCE"/>
+	<property name="stars" value="10"/>
+	</bean>
+	
 	
 
 	

@@ -37,6 +37,8 @@
 
     drop table if exists `shout`;
 
+    drop table if exists `technology_records`;
+
     drop table if exists `user_account`;
 
     drop table if exists `hibernate_sequence`;

@@ -376,8 +376,54 @@ Inquiries
 + description: String{NotBlank}
 + minMoney: Money{NotNull, Valid}
 + maxMoney: Money{NotNull, Valid}
-+ email: String{NotBlank}
++ email: String{NotBlank, Email}
 
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>532</y>
+      <w>266</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+TechnologyRecords
+--
++ title: String{NotBlank}
++ activitySector: String{NotBlank}
++ inventor: String{NotBlank}
++ description: String{NotBlank}
++ website: String{NotBlank, URL}
++ email: String{NotBlank, Email}
++ indication: Indication{NotNull}
++ stars: Integer(Min(1), Max(10))
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>287</y>
+      <w>266</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Indication
+--
++ OPEN_SOURCE
++ CLOSE_SOURCE
 
 
 
