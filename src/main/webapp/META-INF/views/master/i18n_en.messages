@@ -36,6 +36,7 @@ master.menu.anonymous.listDoradoBulletin = List Dorado Bulletin
 master.menu.anonymous.createDoradoBulletin = Create Dorado Bulletin
 master.menu.anonymous.listCalleBulletin = List Calle Bulletin
 master.menu.anonymous.createCalleBulletin = Create Calle Bulletin
+master.menu.anonymous.listTechnology-records = List Technology Records 
 
 
 # master.menu.administrator ###################################################
