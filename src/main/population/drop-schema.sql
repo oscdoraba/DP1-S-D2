@@ -27,6 +27,8 @@
 
     drop table if exists `calle_bulletin`;
 
+    drop table if exists `challenges`;
+
     drop table if exists `consumer`;
 
     drop table if exists `dorado_bulletin`;

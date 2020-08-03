@@ -122,6 +122,21 @@
 	<property name="stars" value="10"/>
 	</bean>
 	
+	<!-- Challenges -->
+	
+	<bean id="challenges01" class="acme.entities.challenges.Challenges">
+	
+	<property name="title" value="NBA"/>
+	<property name="deadline" value="2024/05/03 12:37"/>
+	<property name="description" value="La mayor liga de baloncesto del mundo, donde se encuentran los equipos más prestigiosos del mundo"/>
+	<property name="goal1" value="Campeón de liga"/>
+	<property name="reward1" value="Trofeo NBA"/>
+	<property name="goal2" value="Subcampeón"/>
+	<property name="reward2" value="Medalla de oro"/>
+	<property name="goal3" value="Tercer puesto"/>
+	<property name="reward3" value="Medalla de plata"/>
+	</bean>
+	
 	
 
 	
