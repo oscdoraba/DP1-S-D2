@@ -365,7 +365,7 @@ DoradoBulletin
       <x>721</x>
       <y>532</y>
       <w>266</w>
-      <h>91</h>
+      <h>119</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Inquiries
@@ -424,6 +424,33 @@ Indication
 --
 + OPEN_SOURCE
 + CLOSE_SOURCE
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>532</y>
+      <w>266</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Challenges
+--
++ title: String{NotBlank}
++ deadline: Date{Temporal(TIMESTAMP),Future}
++ description: String{NotBlank}
++ goal1: String{NotBlank}
++ reward1: String{NotBlank}
++ goal2: String{NotBlank}
++ reward2: String{NotBlank}
++ goal3: String{NotBlank}
++ reward3: String{NotBlank}
 
 
 
