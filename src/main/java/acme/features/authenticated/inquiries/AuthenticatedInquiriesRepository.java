@@ -23,7 +23,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedInquiriesRepository extends AbstractRepository {
 
-	@Query("select i from Inquiries i")
+	@Query("select i from Inquiries i where i.deadline > NOW()")
 	Collection<Inquiries> findMany();
 	
 	@Query("select i from Inquiries i where i.id = ?1")
