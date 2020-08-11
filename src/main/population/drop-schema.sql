@@ -33,11 +33,17 @@
 
     drop table if exists `dorado_bulletin`;
 
+    drop table if exists `notice`;
+
+    drop table if exists `overture`;
+
     drop table if exists `inquiries`;
 
     drop table if exists `provider`;
 
     drop table if exists `shout`;
+
+    drop table if exists `tool_record`;
 
     drop table if exists `technology_records`;
 
