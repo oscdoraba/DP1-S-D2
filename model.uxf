@@ -247,15 +247,15 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>91</x>
-      <y>273</y>
+      <y>336</y>
       <w>154</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
-HttpMethod
+TypeSource
 --
-+ GET
-+ POST
++ OPEN_SOURCE
++ CLOSED_SOURCE
 
 bg=yellow</panel_attributes>
     <additional_attributes/>
@@ -299,17 +299,20 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>581</x>
-      <y>406</y>
+      <x>833</x>
+      <y>413</y>
       <w>266</w>
-      <h>91</h>
+      <h>98</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Shout
+Notice
 --
-+ moment: Date{Temporal(TIMESTAMP),Past}
-+ author: String{NotBlank}
-+ text: String{NotBlank}
++ picture: String{NotBlank,URL}
++ creation: Date{Temporal(TIMESTAMP),Past, NotNull}
++ deadline: Date{Temporal(TIMESTAMP),Future, NotNull}
++ body: String{NotBlank}
++ optional1: String{URL}
++ optional2: String{URL}
 
 
 
@@ -353,6 +356,92 @@ DoradoBulletin
 + receiver: String{NotBlank}
 + web: String{URL}
 
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>413</y>
+      <w>266</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Shout
+--
++ moment: Date{Temporal(TIMESTAMP),Past}
++ author: String{NotBlank}
++ text: String{NotBlank}
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>14</x>
+      <y>518</y>
+      <w>266</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Overture
+--
++ title: String{NotBlank}
++ creation: Date{Temporal(TIMESTAMP),Past, NotNull}
++ deadline: Date{Temporal(TIMESTAMP),Future, NotNull}
++ description: String{NotBlank, Length(min = 20)}
++ minMoney: Money{NotNull, Valid}
++ maxMoney: Money{NotNull, Valid}
++ email: String{NotBlank, Email}
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>91</x>
+      <y>266</y>
+      <w>154</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+HttpMethod
+--
++ GET
++ POST
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>301</x>
+      <y>518</y>
+      <w>266</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+ToolRecord
+--
++ title: String{NotBlank}
++ sector: String{NotBlank}
++ inventor: String{NotBlank}
++ description: String{NotBlank, Length(min = 20)}
++ website: String{NotBlank, URL}
++ email: String{NotBlank, Email}
++ tipo: TypeSource{NotNull}
++ stars: Integer{NotNull, Min(value = 0), Max(value = 5)}
 
 
 

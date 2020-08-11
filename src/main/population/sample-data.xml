@@ -92,6 +92,82 @@
 	
 	</bean>
 
+	<!-- Notice -->
 	
+	<bean id="notice01" class="acme.entities.notice.Notice">
+	
+	<property name="picture" value="https://www.fotoAviso1.com"/>
+	<property name="creation" value="2020/06/06 10:00"/>
+	<property name="deadline" value="2021/10/10 12:00"/>
+	<property name="body" value="Aviso sobre reformas laborales"/>
+	<property name="optional1" value="https://www.fotoInformativaOpcional1.com"/>
+	<property name="optional2" value=""/>
+	
+	</bean>
+	
+	<bean id="notice02" class="acme.entities.notice.Notice">
+	
+	<property name="picture" value="https://www.fotoAviso2.com"/>
+	<property name="creation" value="2020/06/06 10:00"/>
+	<property name="deadline" value="2021/08/07 14:20"/>  <!-- 	Si queremos comprobar que solo se muestren las activas la creamos un minuto -->
+	<property name="body" value="Aviso sobre reformas laborales"/> <!-- más tarde de la hora actual (mientras esperamos al sample ya habra pasado -->
+	<property name="optional1" value="https://www.fotoInformativaOpcional2.com"/> <!-- ese tiempo) -->
+	<property name="optional2" value=""/>
+	
+	</bean>
+	
+	<!-- Overture -->
+	
+	<bean id="overture01" class="acme.entities.overture.Overture">
+	
+	<property name="title" value="La mejor propuesta"/>
+	<property name="creation" value="2020/06/06 10:00"/>
+	<property name="deadline" value="2021/10/10 12:00"/>
+	<property name="description" value="Una propuesta internacional que cambiara tu vision"/>
+	<property name="minMoney" value="€ 300.8"/>
+	<property name="maxMoney" value="€ 2745.62"/>
+	<property name="email" value="oscdoraba@alum.us.es"/>
+	
+	</bean>
+	
+	<bean id="overture02" class="acme.entities.overture.Overture">
+	
+	<property name="title" value="Propuesta innovadora"/>
+	<property name="creation" value="2020/06/06 10:00"/>
+	<property name="deadline" value="2021/08/07 14:20"/>
+	<property name="description" value="Nueva propuesta sobre la globalizacion"/>
+	<property name="minMoney" value="€ 500.8"/>
+	<property name="maxMoney" value="€ 3829.21"/>
+	<property name="email" value="pabcalper@alum.us.es"/>
+
+	</bean>
+	
+	<!-- Tool Records -->
+	
+	<bean id="toolrecord01" class="acme.entities.toolRecord.ToolRecord">
+	
+	<property name="title" value="La mejor herramienta del mercado"/>
+	<property name="sector" value="Informatico (Software)"/>
+	<property name="inventor" value="Conchi Bermudez"/>
+	<property name="description" value="Máquina con alta capacidad organizativa"/>
+	<property name="website" value="http://www.conchibermudez.com"/>
+	<property name="email" value="conchibermudez@gmail.com"/>
+	<property name="tipo" value="OPEN_SOURCE"/>
+	<property name="stars" value="4"/>
+	
+	</bean>
+	
+	<bean id="toolrecord02" class="acme.entities.toolRecord.ToolRecord">
+	
+	<property name="title" value="Herramienta basica pero muy util"/>
+	<property name="sector" value="Informatico (Software)"/>
+	<property name="inventor" value="Jose Juan Cañizares"/>
+	<property name="description" value="Artilugio capaz de encontrar errores frecuentes en codigo y dar una explicacion entendible"/>
+	<property name="website" value="http://www.josejuancanizares.com"/>
+	<property name="email" value="josejuancanizares@gmail.com"/>
+	<property name="tipo" value="CLOSED_SOURCE"/>
+	<property name="stars" value="2"/>
+	
+	</bean>
 
 </beans>

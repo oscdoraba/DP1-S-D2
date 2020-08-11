@@ -36,6 +36,8 @@ master.menu.anonymous.listDoradoBulletin = List Dorado Bulletin
 master.menu.anonymous.createDoradoBulletin = Create Dorado Bulletin
 master.menu.anonymous.listCalleBulletin = List Calle Bulletin
 master.menu.anonymous.createCalleBulletin = Create Calle Bulletin
+master.menu.anonymous.listNotice = List Notices
+master.menu.anonymous.listToolRecord = List Tool Records
 
 
 # master.menu.administrator ###################################################
@@ -43,6 +45,7 @@ master.menu.anonymous.createCalleBulletin = Create Calle Bulletin
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.listNotice = List Notices
 
 # master.menu.provider ########################################################
 
@@ -62,6 +65,9 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.listNotice = List Notices
+master.menu.user-account.listOverture = List Overtures
+master.menu.user-account.listToolRecord = List Tool Records
 
 # master.footer ###############################################################
 
