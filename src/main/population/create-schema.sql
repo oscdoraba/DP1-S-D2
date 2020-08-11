@@ -30,6 +30,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenges` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `goal1` varchar(255),
+        `goal2` varchar(255),
+        `goal3` varchar(255),
+        `reward1` varchar(255),
+        `reward2` varchar(255),
+        `reward3` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -74,6 +89,22 @@
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
+    
+
+    create table `inquiries` (
+       `id` integer not null,
+        `version` integer not null,
+        `date_of_creation` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
 
     create table `provider` (
        `id` integer not null,
@@ -102,6 +133,21 @@
         `sector` varchar(255),
         `stars` integer,
         `tipo` integer,
+        `title` varchar(255),
+        `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+
+    create table `technology_records` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sector` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `indication` integer,
+        `inventor` varchar(255),
+        `stars` integer,
         `title` varchar(255),
         `website` varchar(255),
         primary key (`id`)

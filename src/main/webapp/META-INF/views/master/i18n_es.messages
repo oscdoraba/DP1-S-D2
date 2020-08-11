@@ -38,6 +38,7 @@ master.menu.anonymous.listCalleBulletin = Listar Calle Informes
 master.menu.anonymous.createCalleBulletin = Crear Calle Informe
 master.menu.anonymous.listNotice = Listar Avisos
 master.menu.anonymous.listToolRecord = Listar Registros de Herramientas
+master.menu.anonymous.listTechnology-records = Listar Registros Tecnológicos
 
 
 # master.menu.administrator ###################################################
@@ -68,6 +69,8 @@ master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.user-account.listNotice = Listar Avisos
 master.menu.user-account.listOverture = Listar Propuestas
 master.menu.user-account.listToolRecord = Listar Registros de Herramientas
+master.menu.authenticated.inquiries = Listar Consultas
+master.menu.authenticated.challenges = Listar Retos
 
 ﻿# master.footer ###############################################################
 

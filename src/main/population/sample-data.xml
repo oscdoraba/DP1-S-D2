@@ -91,6 +91,76 @@
 	<property name="moment" value="2008/02/13 03:34"/>
 	
 	</bean>
+	
+	<!-- Inquiries -->
+	
+	<bean id="inquiries01" class="acme.entities.inquiries.Inquiries">
+	
+	<property name="title" value="¿La sangre manda en castellano?"/>
+	<property name="dateOfCreation" value="2020/05/01 11:32"/>
+	<property name="deadline" value="2022/04/07 12:34"/>
+	<property name="description" value="Hola, quería saber si ya se encuentra la versión traducida del nuevo libro de Stephen
+	King titulado If It Bleeds en su idioma original
+	
+	Atentamente, un usuario inquieto"/>
+	<property name="minMoney" value="€ 21.70"/>
+	<property name="maxMoney" value="€ 22.70"/>
+	<property name="email" value="impaciente@gmail.com"/>
+	</bean>
+	
+	<bean id="inquiries02" class="acme.entities.inquiries.Inquiries">
+	
+	<property name="title" value="¿Cuándo empieza la FMS España?"/>
+	<property name="dateOfCreation" value="2020/05/13 13:45"/>
+	<property name="deadline" value="2020/11/05 11:36"/>
+	<property name="description" value="Tengo muchas ganas de volver a disfrutar de las batallas después de tanto tiempo."/>
+	<property name="minMoney" value="€ 2.00"/>
+	<property name="maxMoney" value="€ 5.00"/>
+	<property name="email" value="rapero013@gmail.com"/>
+	</bean>
+	<!-- Technology Records -->
+	
+	<bean id="technologyRecords01" class="acme.entities.technologyRecords.TechnologyRecords">
+	
+	<property name="title" value="Corriente alterna"/>
+	<property name="activitySector" value="Electricidad"/>
+	<property name="inventor" value="Nikola Tesla"/>
+	<property name="description" value="Combatió a la corriente continua de Thomas Alva Edison con éxito, funcionando en la actualidad."/>
+	<property name="website" value="https://solar-energia.net/electricidad/corriente-electrica/corriente-alterna"/>
+	<property name="email" value="ntvstae@gmail.com"/>
+	<property name="indication" value="OPEN_SOURCE"/>
+	<property name="stars" value="10"/>
+	</bean>
+	
+	<!-- Challenges -->
+	
+	<bean id="challenges01" class="acme.entities.challenges.Challenges">
+	
+	<property name="title" value="NBA"/>
+	<property name="deadline" value="2024/05/03 12:37"/>
+	<property name="description" value="La mayor liga de baloncesto del mundo, donde se encuentran los equipos más prestigiosos del mundo"/>
+	<property name="goal1" value="Campeón de liga"/>
+	<property name="reward1" value="Trofeo NBA"/>
+	<property name="goal2" value="Subcampeón"/>
+	<property name="reward2" value="Medalla de oro"/>
+	<property name="goal3" value="Tercer puesto"/>
+	<property name="reward3" value="Medalla de plata"/>
+	</bean>
+	
+	<bean id="challenges02" class="acme.entities.challenges.Challenges">
+	
+	<property name="title" value="Liga Santander"/>
+	<property name="deadline" value="2020/11/05 13:58"/>
+	<property name="description" value="La liga de primera división en españa."/>
+	<property name="goal1" value="Campeón de liga"/>
+	<property name="reward1" value="Trofeo de Liga"/>
+	<property name="goal2" value="Subcampeón"/>
+	<property name="reward2" value="Clasificación directa en la Champions"/>
+	<property name="goal3" value="Tercer puesto"/>
+	<property name="reward3" value="Clasificación directa en la Champions"/>
+	</bean>
+	
+	
 
 	<!-- Notice -->
 	

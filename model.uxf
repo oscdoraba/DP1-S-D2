@@ -296,6 +296,7 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
+  
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -355,13 +356,12 @@ DoradoBulletin
 + sender: String{NotBlank}
 + receiver: String{NotBlank}
 + web: String{URL}
-
-
-
-
 </panel_attributes>
     <additional_attributes/>
   </element>
+  
+  
+  
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -376,12 +376,34 @@ Shout
 + moment: Date{Temporal(TIMESTAMP),Past}
 + author: String{NotBlank}
 + text: String{NotBlank}
-
-
-
+</panel_attributes>
+    <additional_attributes/>
+  </element>  
+      
+      
+  <element>
+    <id>UMLClass</id>
+    <coordinates>     
+      <x>721</x>
+      <y>532</y>
+      <w>266</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Inquiries
+--
++ title: String{NotBlank}
++ dateOfCreation: Date{Temporal(TIMESTAMP),Past}
++ deadline: Date{Temporal(TIMESTAMP),Future}
++ description: String{NotBlank}
++ minMoney: Money{NotNull, Valid}
++ maxMoney: Money{NotNull, Valid}
++ email: String{NotBlank, Email}
 </panel_attributes>
     <additional_attributes/>
   </element>
+
+
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -400,12 +422,37 @@ Overture
 + minMoney: Money{NotNull, Valid}
 + maxMoney: Money{NotNull, Valid}
 + email: String{NotBlank, Email}
-
-
-
 </panel_attributes>
     <additional_attributes/>
   </element>
+    
+      
+      
+      
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>532</y>
+      <w>266</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+TechnologyRecords
+--
++ title: String{NotBlank}
++ activitySector: String{NotBlank}
++ inventor: String{NotBlank}
++ description: String{NotBlank}
++ website: String{NotBlank, URL}
++ email: String{NotBlank, Email}
++ indication: Indication{NotNull}
++ stars: Integer(Min(1), Max(10))
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+      
+      
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -419,11 +466,32 @@ HttpMethod
 --
 + GET
 + POST
-
 bg=yellow</panel_attributes>
+  <additional_attributes/>
+  </element>
+  
+  
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>287</y>
+      <w>266</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Indication
+--
++ OPEN_SOURCE
++ CLOSE_SOURCE
+</panel_attributes>
     <additional_attributes/>
   </element>
-  <element>
+  
+  
+  
+
+<element>
     <id>UMLClass</id>
     <coordinates>
       <x>301</x>
@@ -442,10 +510,34 @@ ToolRecord
 + email: String{NotBlank, Email}
 + tipo: TypeSource{NotNull}
 + stars: Integer{NotNull, Min(value = 0), Max(value = 5)}
-
-
-
+</panel_attributes>
+    <additional_attributes/>
+  </element>                        
+ 
+                        
+<element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>532</y>
+      <w>266</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;                        
+Challenges
+--
++ title: String{NotBlank}
++ deadline: Date{Temporal(TIMESTAMP),Future}
++ description: String{NotBlank}
++ goal1: String{NotBlank}
++ reward1: String{NotBlank}
++ goal2: String{NotBlank}
++ reward2: String{NotBlank}
++ goal3: String{NotBlank}
++ reward3: String{NotBlank}
 </panel_attributes>
     <additional_attributes/>
   </element>
+
+
 </diagram>
