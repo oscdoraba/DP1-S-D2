@@ -63,6 +63,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `inquiries` (
+       `id` integer not null,
+        `version` integer not null,
+        `date_of_creation` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `notice` (
        `id` integer not null,
         `version` integer not null,
@@ -79,22 +94,6 @@
        `id` integer not null,
         `version` integer not null,
         `creation` datetime(6),
-        `deadline` datetime(6),
-        `description` varchar(255),
-        `email` varchar(255),
-        `max_money_amount` double precision,
-        `max_money_currency` varchar(255),
-        `min_money_amount` double precision,
-        `min_money_currency` varchar(255),
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-    
-
-    create table `inquiries` (
-       `id` integer not null,
-        `version` integer not null,
-        `date_of_creation` datetime(6),
         `deadline` datetime(6),
         `description` varchar(255),
         `email` varchar(255),
@@ -124,21 +123,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `tool_record` (
-       `id` integer not null,
-        `version` integer not null,
-        `description` varchar(255),
-        `email` varchar(255),
-        `inventor` varchar(255),
-        `sector` varchar(255),
-        `stars` integer,
-        `tipo` integer,
-        `title` varchar(255),
-        `website` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-    
-
     create table `technology_records` (
        `id` integer not null,
         `version` integer not null,
@@ -148,6 +132,20 @@
         `indication` integer,
         `inventor` varchar(255),
         `stars` integer,
+        `title` varchar(255),
+        `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `tool_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `email` varchar(255),
+        `inventor` varchar(255),
+        `sector` varchar(255),
+        `stars` integer,
+        `tipo` integer,
         `title` varchar(255),
         `website` varchar(255),
         primary key (`id`)
