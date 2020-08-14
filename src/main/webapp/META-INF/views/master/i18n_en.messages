@@ -70,6 +70,7 @@ master.menu.user-account.listNotice = List Notices
 master.menu.user-account.listOverture = List Overtures
 master.menu.user-account.listToolRecord = List Tool Records
 master.menu.authenticated.inquiries = List Inquiries
+master.menu.authenticated.listTechnology-records = List Technology Records
 master.menu.authenticated.challenges = List Challenges
 
 # master.footer ###############################################################
