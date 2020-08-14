@@ -64,6 +64,7 @@
 			<acme:menu-suboption code="master.menu.user-account.listOverture" action="/authenticated/overture/list"/>
 			<acme:menu-suboption code="master.menu.user-account.listToolRecord" action="/authenticated/tool-record/list"/>				
 			<acme:menu-suboption code="master.menu.authenticated.inquiries" action="/authenticated/inquiries/list" />
+			<acme:menu-suboption code="master.menu.authenticated.listTechnology-records" action="/authenticated/technology-records/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.challenges" action="/authenticated/challenges/list" />
 		</acme:menu-option>
 

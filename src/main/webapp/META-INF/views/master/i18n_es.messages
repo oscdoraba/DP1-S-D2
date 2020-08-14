@@ -70,6 +70,7 @@ master.menu.user-account.listNotice = Listar Avisos
 master.menu.user-account.listOverture = Listar Propuestas
 master.menu.user-account.listToolRecord = Listar Registros de Herramientas
 master.menu.authenticated.inquiries = Listar Consultas
+master.menu.authenticated.listTechnology-records = Listar Registros Tecnológicos
 master.menu.authenticated.challenges = Listar Retos
 
 ﻿# master.footer ###############################################################
